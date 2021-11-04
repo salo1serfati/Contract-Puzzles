@@ -1,4 +1,4 @@
-const { assert } = require("chai");
+  const { assert } = require("chai");
 
 describe("Game1", function() {
   it("should be a winner", async function() {
@@ -7,7 +7,7 @@ describe("Game1", function() {
     await game.deployed();
 
     // you must call unlock before you can win
-
+    await game.unlock(); 
     await game.win();
 
     // leave this assertion as-is
